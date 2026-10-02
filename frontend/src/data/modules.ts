@@ -157,6 +157,18 @@ export const MODULES: ModuleMeta[] = [
     metrics: ["待巡查区域", "待整改隐患", "本月巡查次数"],
   },
   {
+    key: "visitor",
+    name: "访客接待",
+    entity: "访客记录",
+    desc: "维护访客接待册，围绕访客编号、到访事由、陪同人、离场时间做登记、筛选与状态流转。",
+    fields: ["访客编号", "到访事由", "陪同人", "到访日期", "签到时间", "离场时间", "门卫登记号", "接待状态"],
+    statuses: ["已预约", "已签到", "已离场"],
+    actions: ["登记签到", "办理离场"],
+    actionTargets: {"登记签到": "已签到", "办理离场": "已离场"},
+    metrics: ["在区访客", "今日到访", "离场时间待补齐"],
+    strictFlow: true,
+  },
+  {
     key: "packing",
     name: "样品封装",
     entity: "封装记录",

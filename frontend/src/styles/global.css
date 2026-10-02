@@ -35,3 +35,23 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.ok-text { color: #15803d; }
+.banner { border-radius: 6px; padding: 8px 12px; font-size: 13px; margin-bottom: 10px; }
+.banner.warn { background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; }
+.banner.danger { background: #fef2f2; border: 1px solid #fca5a5; color: #b42318; }
+.kanban-row { display: flex; gap: 12px; align-items: flex-start; overflow-x: auto; padding-bottom: 4px; }
+.kanban-col { flex: 1 1 240px; min-width: 240px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px; }
+.kanban-col.onsite { border-color: var(--brand); background: #f0f6ff; }
+.kanban-title { margin: 0 0 10px; font-size: 14px; display: flex; justify-content: space-between; align-items: baseline; }
+.kanban-count { color: var(--muted); font-size: 12px; font-weight: normal; }
+.visitor-card { border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; background: #fff; }
+.visitor-card.warn { border-color: #f59e0b; background: #fffbeb; }
+.visitor-card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.visitor-id { font-weight: 600; }
+.visitor-line { font-size: 12px; color: #374151; margin: 2px 0; }
+.visitor-line .label { color: var(--muted); margin-right: 6px; }
+.badge { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; background: #eef2f7; color: #374151; font-style: normal; }
+.badge.info { background: #dbeafe; color: #1d4ed8; }
+.badge.warn { background: #fef3c7; color: #b45309; }
+.badge.danger { background: #fee2e2; color: #b42318; }
+.card-actions { display: flex; gap: 10px; margin-top: 6px; }

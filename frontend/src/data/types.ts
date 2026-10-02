@@ -18,6 +18,8 @@ export type ModuleMeta = {
   actions: string[]
   actionTargets: Record<string, string>
   metrics: string[]
+  /** 为 true 时状态只能按 statuses 的顺序一段一段往下走，不许跨步也不许回头。 */
+  strictFlow?: boolean
 }
 
 export type PageResult = {
