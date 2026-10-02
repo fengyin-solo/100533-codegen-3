@@ -19,6 +19,8 @@ const Packing = () => import('@/views/packing/index.vue')
 const Conserve = () => import('@/views/conserve/index.vue')
 const Briefing = () => import('@/views/briefing/index.vue')
 const Acceptance = () => import('@/views/acceptance/index.vue')
+const VisitorGate = () => import('@/views/visitor-gate/index.vue')
+const VisitorBook = () => import('@/views/visitor-book/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +44,8 @@ const router = createRouter({
     { path: '/conserve', name: 'conserve', component: Conserve },
     { path: '/briefing', name: 'briefing', component: Briefing },
     { path: '/acceptance', name: 'acceptance', component: Acceptance },
+    { path: '/visitor-gate', name: 'visitor-gate', component: VisitorGate },
+    { path: '/visitor-book', name: 'visitor-book', component: VisitorBook },
   ],
 })
 
